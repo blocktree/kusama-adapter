@@ -45,3 +45,5 @@ https://github.com/paritytech/substrate-api-sidecar
 公共API
 
 https://github.com/paritytech/substrate-api-sidecar/
+
+精度 : 12, 确认数

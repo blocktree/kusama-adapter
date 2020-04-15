@@ -27,5 +27,5 @@ func NewWalletManager() *WalletManager {
 
 //FullName 币种全名
 func (wm *WalletManager) FullName() string {
-	return "ksm"
+	return "Kusama"
 }
