@@ -10,7 +10,7 @@ openwtester包下的测试用例已经集成了openwallet钱包体系，创建co
 # node api url
 nodeAPI = "http://x.x.x.x:xxxxx"
 # fixed Fee in smallest unit
-fixedFee = 10000000000
+fixedFee = 100000000
 # reserve amount in smallest unit
 reserveAmount = 0
 # ignore reserve amount
@@ -46,4 +46,6 @@ https://github.com/paritytech/substrate-api-sidecar
 
 https://github.com/paritytech/substrate-api-sidecar/
 
-精度 : 12, 确认数
+精度 : 12, 确认数 100
+目前链上手续费0.011，推荐收取商户0.05(mxc:0.1)
+汇总时，需要保留0.01作为余额
