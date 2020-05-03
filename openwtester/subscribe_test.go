@@ -64,8 +64,8 @@ func TestSubscribeAddress(t *testing.T) {
 		endRunning = make(chan bool, 1)
 		symbol     = "KSM"
 		addrs      = map[string]string{
-			"CyVGZAGjfD9bbQcN7Ja7cFrazM4yAzawRhKcWYN1ZmMrpwf": "sender",
-			"FiUb2gCcL4wK93yFngpRPjEoB7RTvsy91Gqcx5bdnskshfm": "receiver",
+			"HeiQcFfsVFLFJzWhN2GGoc1ux1sqmpfPzGP3mS1twp9LfLc": "sender",
+			"FF18cVU2Q4gTpLMnfXZ2Ekw8prTkzfk6RJ6NZazmibLD7Fh": "receiver",
 		}
 	)
 
@@ -112,7 +112,7 @@ func TestSubscribeAddress(t *testing.T) {
 		scanner.SetBlockchainDAI(dai)
 	}
 
-	scanner.SetRescanBlockHeight(1813154)
+	scanner.SetRescanBlockHeight(2071735)
 
 	if scanner == nil {
 		log.Error(symbol, "is not support block scan")

@@ -162,17 +162,19 @@ func TestBatchTransfer(t *testing.T) {
 	walletID := "WLSHvceUVnKCW1DNFvc2ZrwaxkvXcJoTYJ"
 	accountID := "BVJJSrYaDxqV111jhLSab7Krjy44JScVGCx1hHuUCyEt"
 	toArr := make([]string, 0)
-	toArr = append(toArr, "CyVGZAGjfD9bbQcN7Ja7cFrazM4yAzawRhKcWYN1ZmMrpwf")
-	//toArr = append(toArr, "DYP2dDKrxdgyAVhwN9cgdVyyrUR1234We8qMahrj5SWNFy5")
-	//toArr = append(toArr, "DqgFAywY2jqKtKgntKnN1jNpGV6TxnkXgpUtRYo1LCjsai2")
+	toArr = append(toArr, "EWT4VQptTYSYP9LWYfA4BsqCXV9YgxFBrCEhiRYCmBr3Uyq")
+	//toArr = append(toArr, "HJZhHkgiV5n89TZskXjMKtQ3qxXdEWMYHLWBdxdKNcrU45B")
+	//toArr = append(toArr, "JJ1oAVnZUSthL84wZgHmdC6k4JzfZY6Y5RGp5LxkwMuRmuy")
 	//toArr = append(toArr, "EXRio1TXjLjr7fz9LmdsjPDME5y5eQz2ffJotbcXwKyhXbC")
 	//toArr = append(toArr, "HUwSCNJH2YjZuwoNbWmsr86C1ViPs6MSQkKUpMkEdmh98hb")
+
+	ClearAddressNonce(tm, walletID, accountID)
 
 	for i := 0; i < len(toArr); i++{
 		to := toArr[i]
 		testGetAssetsAccountBalance(tm, walletID, accountID)
 
-		rawTx, err := testCreateTransactionStep(tm, walletID, accountID, to, "0.031", "", nil)
+		rawTx, err := testCreateTransactionStep(tm, walletID, accountID, to, "0.1010347", "", nil)
 		if err != nil {
 			return
 		}
