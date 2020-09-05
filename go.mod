@@ -8,4 +8,4 @@ require (
 	github.com/blocktree/polkadot-adapter v1.0.34
 )
 
-replace github.com/blocktree/polkadot-adapter => ../polkadot-adapter
+// replace github.com/blocktree/polkadot-adapter => ../polkadot-adapter
