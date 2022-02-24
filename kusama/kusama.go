@@ -20,7 +20,7 @@ type WalletManager struct {
 func NewWalletManager() *WalletManager {
 	wm := WalletManager{}
 	wm.WalletManager = polkadot.NewWalletManager()
-	wm.Config = polkadot.NewConfig(Symbol, MasterKey, GenesisHash, SpecVersion, AddrPrefix)
+	wm.Config = polkadot.NewConfig(Symbol, MasterKey, AddrPrefix)
 	//wm.LoadAssetsConfig( wm.Config )
 	wm.Log = log.NewOWLogger(wm.Symbol())
 	return &wm
